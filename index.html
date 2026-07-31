@@ -1,0 +1,419 @@
+ <!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MONNOUKOUN Hironde — Développeuse Full Stack | Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+
+<!-- Fond animé : les blobs sont fixes et restent visibles derrière toutes les sections -->
+<div class="bg-blobs">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+</div>
+
+<nav>
+  <a href="#" class="logo">0x<span>Hironde</span></a>
+
+  <div class="nav-right">
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" data-fr="À propos" data-en="About">À propos</a></li>
+      <li><a href="#projects" data-fr="Projets" data-en="Projects">Projets</a></li>
+      <li><a href="#skills" data-fr="Compétences" data-en="Skills">Compétences</a></li>
+      <li><a href="#contact" data-fr="Contact" data-en="Contact">Contact</a></li>
+      <li><a href="#contact" class="btn btn-primary" data-fr="Me contacter" data-en="Contact me">Me contacter</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button id="themeToggle" class="icon-btn" aria-label="Changer de thème">
+        <svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" stroke-linecap="round"/>
+        </svg>
+        <svg class="icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z" stroke-linejoin="round"/>
+        </svg>
+      </button>
+
+      <button id="langToggle" class="icon-btn lang-btn" aria-label="Changer de langue">EN</button>
+    </div>
+
+    <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<header class="hero" id="hero">
+  <div class="hero-text">
+    <p class="eyebrow" data-fr="Disponible pour des projets" data-en="Open to opportunities">Disponible pour des projets</p>
+
+    <h1>
+      <span class="typed" id="typedText"></span><span class="cursor" id="cursor"></span>
+    </h1>
+
+    <p class="role" data-fr="Étudiante en Génie Logiciel · Développeuse Full Stack" data-en="Software Engineering Student · Full Stack Developer">
+      Étudiante en Génie Logiciel · Développeuse Full Stack
+    </p>
+
+    <p class="desc" data-fr="Développeuse Full Stack Junior passionnée par la création d'applications web modernes et performantes."
+       data-en="Aspiring Full Stack Developer passionate about building modern and scalable web applications.">
+      Développeuse Full Stack en Junior passionnée par la création d'applications web modernes et performantes.
+    </p>
+
+    <div class="hero-cta">
+      <a href="#projects" class="btn btn-primary" data-fr="Voir mes projets" data-en="See my projects">Voir mes projets</a>
+      <a href="#contact" class="btn btn-ghost" data-fr="Me contacter" data-en="Contact me">Me contacter</a>
+    </div>
+  </div>
+
+  <div class="hero-photo">
+    <div class="photo-frame">
+      <img src="file_00000000ea747243934b79e03223bc82.png" alt="Photo de Gesse, 0xHironde">
+    </div>
+  </div>
+</header>
+
+<section class="section" id="about">
+  <div class="section-head">
+    <p class="section-eyebrow" data-fr="01 — À propos" data-en="01 — About">01 — À propos</p>
+    <h2 data-fr="Qui je suis ?" data-en="Who I am ?">Qui je suis ?</h2>
+  </div>
+
+  <div class="about-grid">
+    <div class="glass about-visual reveal">
+      <img src="file_00000000797081f49052e599718ecca2.png" alt="Sai Nanami en train de coder">
+    </div>
+
+    <div class="about-text reveal">
+      <p>
+        <span data-fr="Je suis" data-en="Hi! I'm">Je suis</span>
+        <span class="highlight">MONNOUKOUN Hironde</span>
+        <span data-fr=", étudiante en première année de Licence en Génie Logiciel à l'IFRI (Université d'Abomey-Calavi). Je suis une développeuse Full Stack en devenir, passionnée par la création d'applications web modernes, performantes et intuitives."
+              data-en=", a first-year Software Engineering student at IFRI (University of Abomey-Calavi). I'm an aspiring Full Stack Developer with a passion for building modern, user-friendly, and efficient web applications.">
+          , étudiante en première année de Licence en Génie Logiciel à l'IFRI (Université d'Abomey-Calavi). Je suis une développeuse Full Stack en devenir, passionnée par la création d'applications web modernes, performantes et intuitives.
+        </span>
+      </p>
+      <p data-fr="J'aime transformer des idées en solutions concrètes en intervenant aussi bien sur le front-end que sur le back-end. Chaque projet est une occasion de développer mes compétences, d'explorer de nouvelles technologies et d'écrire un code propre, maintenable et efficace."
+         data-en="I enjoy transforming ideas into functional digital solutions by working on both the front end and the back end. Every project is an opportunity for me to improve my technical skills, explore new technologies, and write clean, maintainable code.">
+         J'aime transformer des idées en solutions concrètes en intervenant aussi bien sur le front-end que sur le back-end. Chaque projet est une occasion de développer mes compétences, d'explorer de nouvelles technologies et d'écrire un code propre, maintenable et efficace.
+      </p>
+      <p data-fr="Curieuse et déterminée, je suis en apprentissage continu afin de concevoir des applications qui allient fonctionnalité, expérience utilisateur et impact."
+         data-en="I'm continuously learning and challenging myself to become a better developer. My goal is to build applications that are not only functional but also intuitive, accessible, and impactful.">
+         Curieuse et déterminée, je suis en apprentissage continu afin de concevoir des applications qui allient fonctionnalité, expérience utilisateur et impact.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="projects">
+  <div class="section-head">
+    <p class="section-eyebrow" data-fr="02 — Projets" data-en="02 — Projects">02 — Projets</p>
+    <h2 data-fr="Ce que j'ai construit" data-en="What I've built">Ce que j'ai construit</h2>
+  </div>
+
+  <div class="projects-grid">
+    
+    <div class="glass project-card reveal">
+      <div class="project-card-inner">
+      <svg class="project-icon" viewBox="0 0 48 48" fill="none">
+        <rect x="4" y="4" width="40" height="40" rx="10" fill="url(#gradKenji)" opacity="0.15"/>
+        <path d="M16 30l6-14 6 14M18 26h8" stroke="#7C5CFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+        <defs><linearGradient id="gradKenji" x1="0" y1="0" x2="48" y2="48"><stop stop-color="#7C5CFF"/><stop offset="1" stop-color="#3ED8C3"/></linearGradient></defs>
+      </svg>
+      <h3>Coach Kenji</h3>
+      <p data-fr="Landing page pour un coach sportif fictif, pensée pour convertir : structure claire, mise en page responsive, code 100% vanilla."
+         data-en="Landing page for a fictional sports coach, built to convert: clear structure, responsive layout, 100% vanilla code.">
+        Landing page pour un coach sportif fictif, pensée pour convertir : structure claire, mise en page responsive, code 100% vanilla.
+      </p>
+      <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span></div>
+      <a href="https://mnkgesse-stack.github.io/coach_kenji_root/" target="_blank" rel="noopener" class="project-link" data-fr="Voir le site" data-en="View site">Voir le site →</a>
+    </div>
+  </div>
+
+    <div class="glass project-card reveal">
+      <div class="project-card-inner">
+        <svg class="project-icon" viewBox="0 0 48 48" fill="none">
+          <rect x="4" y="4" width="40" height="40" rx="10" fill="url(#gradMentor)" opacity="0.15"/>
+          <circle cx="18" cy="18" r="4" stroke="#3ED8C3" stroke-width="2.2"/>
+          <circle cx="30" cy="30" r="4" stroke="#3ED8C3" stroke-width="2.2"/>
+          <path d="M21 20l6 8" stroke="#3ED8C3" stroke-width="2.2" stroke-linecap="round"/>
+          <defs><linearGradient id="gradMentor" x1="0" y1="0" x2="48" y2="48"><stop stop-color="#3ED8C3"/><stop offset="1" stop-color="#7C5CFF"/></linearGradient></defs>
+        </svg>
+        <h3>IFRI_MentorLink</h3>
+        <p data-fr="Plateforme de mentorat académique entre étudiants, avec gestion des utilisateurs ,  des mises en relation et une messagerie instantannée."
+          data-en="Academic mentoring platform for students, with user management , matchmaking .">
+          Plateforme de mentorat académique entre étudiants, avec gestion des utilisateurs , des mises en relation et une messagerie instantannée.
+        </p>
+        <div class="tags"><span class="tag">Flask</span><span class="tag">PostgreSQL</span><span class="tag">SQLAlchemy</span></div>
+        <a href="https://rising-minds-mentorlink.onrender.com" class="project-link" data-fr="Voir le site" data-en="View site">Bientôt en ligne →</a>
+      </div>
+    </div>
+
+    <div class="glass project-card reveal">
+      <div class="project-card-inner"> 
+        <svg class="project-icon" viewBox="0 0 48 48" fill="none">
+          <rect x="4" y="4" width="40" height="40" rx="10" fill="url(#gradSoon)" opacity="0.15"/>
+          <circle cx="24" cy="24" r="3" fill="#7C5CFF"/>
+          <circle cx="24" cy="24" r="10" stroke="#7C5CFF" stroke-width="2" stroke-dasharray="3 4"/>
+          <defs><linearGradient id="gradSoon" x1="0" y1="0" x2="48" y2="48"><stop stop-color="#7C5CFF"/><stop offset="1" stop-color="#3ED8C3"/></linearGradient></defs>
+        </svg>
+        <h3 data-fr="En cours" data-en="In progress">En cours</h3>
+        <p data-fr="Un nouveau projet est en préparation — plus de détails bientôt."
+          data-en="A new project is in the works — more details coming soon.">
+          Un nouveau projet est en préparation — plus de détails bientôt.
+        </p>
+        <div class="tags"><span class="tag">?</span></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section" id="skills">
+  <div class="section-head">
+    <p class="section-eyebrow" data-fr="03 — Compétences" data-en="03 — Skills">03 — Compétences</p>
+    <h2 data-fr="Boîte à outils" data-en="Toolbox">Boîte à outils</h2>
+  </div>
+
+  <div class="skills-grid">
+
+    <div class="glass skill-block reveal">
+      <h3 data-fr="Backend" data-en="Backend">Backend</h3>
+
+      <ul class="skill-list">
+        <li>
+          <svg class="tech-icon" viewBox="0 0 20 20" fill="none">
+            <path d="M10 2c-2.2 0-3.5 1-3.5 1v2.3h3.4v.5H4.8S3 6 3 9.2s1.6 3 1.6 3h1.6v-1.7S6 8.8 8 8.8h2.2s1.9.1 1.9-1.8V4S12.4 2 10 2Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/>
+            <path d="M10 18c2.2 0 3.5-1 3.5-1v-2.3h-3.4v-.5h5.1s1.8-.2 1.8-3.4-1.6-3-1.6-3h-1.6v1.7s.2 1.7-1.8 1.7H9.8s-1.9-.1-1.9 1.8V16s.9 2 2.1 2Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/>
+            <circle cx="7.2" cy="4.3" r="0.5" fill="currentColor"/>
+            <circle cx="12.8" cy="15.7" r="0.5" fill="currentColor"/>
+          </svg>
+          <span>Python</span>
+        </li>
+        <li>
+          <svg class="tech-icon" viewBox="0 0 20 20" fill="none">
+            <path d="M4 4h12l-1 3H8l.4 2.2h6.2L14 15l-4 1.3-4-1.3-.3-2.6h2.3l.15 1.1L10 14l1.85-.6.2-2H5.6L4.6 4.6" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+          </svg>
+          <span>Flask</span>
+        </li>
+        <li>
+          <svg class="tech-icon" viewBox="0 0 20 20" fill="none">
+            <ellipse cx="10" cy="5" rx="6" ry="2.2" stroke="currentColor" stroke-width="1.3"/>
+            <path d="M4 5v10c0 1.2 2.7 2.2 6 2.2s6-1 6-2.2V5" stroke="currentColor" stroke-width="1.3"/>
+            <path d="M4 10c0 1.2 2.7 2.2 6 2.2s6-1 6-2.2" stroke="currentColor" stroke-width="1.3" opacity="0.6"/>
+          </svg>
+          <span>PostgreSQL</span>
+        </li>
+        <li>
+          <svg class="tech-icon" viewBox="0 0 20 20" fill="none">
+            <circle cx="6" cy="6" r="2.3" stroke="currentColor" stroke-width="1.3"/>
+            <circle cx="14" cy="14" r="2.3" stroke="currentColor" stroke-width="1.3"/>
+            <path d="M7.6 7.6l4.8 4.8" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+          </svg>
+          <span>SQLAlchemy</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="glass skill-block reveal">
+      <h3 data-fr="Frontend" data-en="Frontend">Frontend</h3>
+
+      <ul class="skill-list">
+        <li>
+          <svg class="tech-icon" viewBox="0 0 20 20" fill="none">
+            <path d="M4 3h12l-1.1 13L10 17.3 5.1 16 4 3Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/>
+            <path d="M10 6H6.5l.2 2.4H10M10 11H7l.2 2.2L10 14" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>HTML5</span>
+        </li>
+        <li>
+          <svg class="tech-icon" viewBox="0 0 20 20" fill="none">
+            <path d="M4 3h12l-1.1 13L10 17.3 5.1 16 4 3Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/>
+            <path d="M13 6H7l.2 2.4h5.4L12.4 12 10 12.9 7.6 12l-.15-1.7" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>CSS3</span>
+        </li>
+        <li>
+          <svg class="tech-icon" viewBox="0 0 20 20" fill="none">
+            <rect x="3" y="3" width="14" height="14" rx="1.5" stroke="currentColor" stroke-width="1.3"/>
+            <path d="M8.2 7v5.2c0 1.3-1.9 1.3-2.4 .2" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+            <path d="M11 7v3.8c0 1.6 2.5 1.6 2.5 0 0-1-1-1.2-1.6-1.4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+          </svg>
+          <span>JavaScript</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="glass skill-block reveal">
+      <h3 data-fr="Outils" data-en="Tools">Outils</h3>
+
+      <ul class="skill-list">
+        <li>
+          <svg class="tech-icon" viewBox="0 0 20 20" fill="none">
+            <circle cx="6" cy="5" r="1.8" stroke="currentColor" stroke-width="1.3"/>
+            <circle cx="6" cy="15" r="1.8" stroke="currentColor" stroke-width="1.3"/>
+            <circle cx="14" cy="10" r="1.8" stroke="currentColor" stroke-width="1.3"/>
+            <path d="M6 6.8v6.4M7.6 9.3 12.3 10" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+          </svg>
+          <span>Git & GitHub</span>
+        </li>
+        <li>
+          <svg class="tech-icon" viewBox="0 0 20 20" fill="none">
+            <circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="1.3"/>
+            <path d="M3 10h14M10 3c1.8 2 1.8 12 0 14M10 3c-1.8 2-1.8 12 0 14" stroke="currentColor" stroke-width="1.1"/>
+          </svg>
+          <span>GitHub Pages</span>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+ 
+  <section class="section" id="contact">
+  <div class="section-head">
+    <p class="section-eyebrow" data-fr="04 — Contact" data-en="04 — Contact">04 — Contact</p>
+    <h2 data-fr="Discutons" data-en="Let's talk">Discutons</h2>
+  </div>
+
+  <div class="glass contact-card reveal">
+
+    <div class="contact-form-side">
+      <div class="contact-intro">
+        <h3 data-fr="Envoyez-moi un message" data-en="Send me a message">Envoyez-moi un message</h3>
+        <p data-fr="Vous avez un projet, une opportunité ou souhaitez simplement échanger ? Je serais ravie de discuter avec vous. N'hésitez pas à me contacter, je vous répondrai dans les meilleurs délais."
+           data-en="Have a project, an opportunity, or just want to say hello? I'd love to hear from you. Feel free to reach out via email. ">
+          Vous avez un projet, une opportunité ou souhaitez simplement échanger ? Je serais ravie de discuter avec vous. N'hésitez pas à me contacter, je vous répondrai dans les meilleurs délais.
+        </p>
+      </div>
+
+      <form id="contactForm">
+        <label>
+          <span data-fr="Nom" data-en="Name">Nom</span>
+          <input type="text" name="name" required>
+        </label>
+        <label>
+          <span data-fr="Email" data-en="Email">Email</span>
+          <input type="email" name="email" required>
+        </label>
+        <label>
+          <span data-fr="Message" data-en="Message">Message</span>
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button type="submit" class="btn btn-primary" data-fr="Envoyer" data-en="Send">Envoyer</button>
+      </form>
+    </div>
+
+    <div class="social-column">
+      <p class="contact-links-title" data-fr="Ou retrouvez-moi sur :" data-en="Or find me on : ">Ou retrouvez-moi sur :</p>
+
+      <a href="https://wa.me/+2290147080009" target="_blank" rel="noopener" class="social-link">
+        <span class="icon-wrap icon-whatsapp">
+          <svg viewBox="0 0 24 24"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .102 5.36.099 11.943c0 2.096.548 4.142 1.588 5.945L0 24l6.335-1.652a11.882 11.882 0 005.7 1.451h.006c6.585 0 11.946-5.36 11.949-11.943a11.87 11.87 0 00-3.47-8.407"/></svg>
+        </span>
+        <span>WhatsApp</span>
+      </a>
+
+      <a href="https://www.linkedin.com/in/hironde-monnoukoun-030628403/" target="_blank" rel="noopener" class="social-link">
+        <span class="icon-wrap icon-linkedin">
+          <svg viewBox="0 0 24 24"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </span>
+        <span>LinkedIn</span>
+      </a>
+
+      <a href="https://x.com/@gesse2058" target="_blank" rel="noopener" class="social-link">
+        <span class="icon-wrap icon-x">
+          <svg viewBox="0 0 24 24"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </span>
+        <span>X</span>
+      </a>
+
+      <a href="https://facebook.com/Gesse Mnk" target="_blank" rel="noopener" class="social-link">
+        <span class="icon-wrap icon-facebook">
+          <svg viewBox="0 0 24 24"><path fill="currentColor" d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 011.141.195v3.325a8.62 8.62 0 00-.653-.036 8.72 8.72 0 00-.734-.031c-.383 0-.735.043-1.037.157a1.874 1.874 0 00-.735.474c-.181.202-.318.446-.394.751-.098.4-.148.94-.148 1.5v1.16h4.187l-.379 3.667h-3.808v7.984c-.6.083-1.234.126-1.887.126-.7 0-1.372-.049-2.017-.156"/></svg>
+        </span>
+        <span>Facebook</span>
+      </a>
+
+      <a href="mailto:mnkgesse@gmail.com" class="social-link">
+        <span class="icon-wrap icon-gmail">
+          <svg viewBox="0 0 24 24"><path fill="currentColor" d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 010 19.366V5.457c0-.904.732-1.636 1.636-1.636h.723L12 10.94l9.641-7.119h.723c.904 0 1.636.732 1.636 1.636"/></svg>
+        </span>
+        <span>Gmail</span>
+      </a>
+
+      <a href="https://github.com/mnkgesse-stack" target="_blank" rel="noopener" class="social-link">
+        <span class="icon-wrap icon-github">
+          <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.333-1.754-1.333-1.754-1.089-.745.083-.729.083-.729 1.205.084 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.42-1.305.763-1.605-2.665-.303-5.467-1.334-5.467-5.931 0-1.31.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.51 11.51 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.29-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.625-5.479 5.921.43.372.823 1.102.823 2.222 0 1.606-.015 2.898-.015 3.293 0 .322.216.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+        </span>
+        <span>GitHub</span>
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="footer-top">
+
+    <div class="footer-brand">
+      <div class="footer-avatar">
+        <img src="file_00000000afc071f49f3818011445107b.png" alt="0xHironde">
+      </div>
+      <div class="footer-brand-text">
+        <p class="footer-logo">0x<span>Hironde</span></p>
+        <p class="footer-tagline" data-fr="Étudiante en Génie Logiciel." data-en="Software Engineering student.">
+          Étudiante en Génie Logiciel.
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-nav">
+      <p class="footer-col-title" data-fr="Navigation" data-en="Navigation">Navigation</p>
+      <a href="#about" data-fr="À propos" data-en="About">À propos</a>
+      <a href="#projects" data-fr="Projets" data-en="Projects">Projets</a>
+      <a href="#skills" data-fr="Compétences" data-en="Skills">Compétences</a>
+      <a href="#contact" data-fr="Contact" data-en="Contact">Contact</a>
+    </div>
+
+    <div class="footer-socials-col">
+      <p class="footer-col-title" data-fr="Réseaux" data-en="Socials">Réseaux</p>
+      <div class="footer-socials">
+        <a href="https://wa.me/+2290147080009" target="_blank" rel="noopener" class="footer-icon icon-whatsapp" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .102 5.36.099 11.943c0 2.096.548 4.142 1.588 5.945L0 24l6.335-1.652a11.882 11.882 0 005.7 1.451h.006c6.585 0 11.946-5.36 11.949-11.943a11.87 11.87 0 00-3.47-8.407"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/hironde-monnoukoun-030628403/" target="_blank" rel="noopener" class="footer-icon icon-linkedin" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="https://x.com/@gesse2058" target="_blank" rel="noopener" class="footer-icon icon-x" aria-label="X">
+          <svg viewBox="0 0 24 24"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <a href="mailto:mnkgesse@gmail.com" class="footer-icon icon-gmail" aria-label="Gmail">
+          <svg viewBox="0 0 24 24"><path fill="currentColor" d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 010 19.366V5.457c0-.904.732-1.636 1.636-1.636h.723L12 10.94l9.641-7.119h.723c.904 0 1.636.732 1.636 1.636"/></svg>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p data-fr="© 2026 0xHironde. Tous droits réservés." data-en="© 2026 0xHironde. All rights reserved.">
+      © 2026 0xHironde. Tous droits réservés.
+    </p>
+  </div>
+</footer>
+
+<button id="backToTop" class="fab-top" aria-label="Retour en haut">
+  <svg viewBox="0 0 24 24" fill="none"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
