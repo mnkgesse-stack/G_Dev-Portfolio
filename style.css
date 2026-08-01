@@ -701,6 +701,18 @@ nav{
   height:17px;
 }
 
+@media (max-width:900px){
+  .contact-card{
+    grid-template-columns:1fr;
+  }
+  .social-column{
+    border-left:none;
+    border-top:1px solid var(--border);
+    padding-left:0;
+    padding-top:1.5rem;
+  }
+}
+
 /* couleurs officielles des marques */
 .icon-whatsapp{ color:#25D366; }
 .icon-linkedin{ color:#0A66C2; }
